@@ -1,0 +1,76 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-1145px);
+  }
+}
+
+.title {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scroller {
+  display: inline-block;
+  animation: scroll 15s linear infinite;
+  /* max-width: fit-content; */
+  position: relative;
+  margin-left: 256px;
+}
+
+.homecontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  padding-top: 5svh;
+  margin: 50px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+  font-size: x-large;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: rgba(255, 255, 255, 0);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1) color;
+}
+
+.option:hover {
+  color: white;
+}
+
+.optionsuper {
+  color: white;
+}
+
+.rivopt {
+    position: fixed;
+  padding-top: 25svh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+.dynamicriver {
+  width: 70%;
+  position: relative;
+  overflow: hidden;
+}
